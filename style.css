@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure content spans the full viewport height */
+    background: linear-gradient(to bottom right, #f0f4f9, #d9e4f5);
+    color: #333;
+  }
+  
+  /* Container for social icons */
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    border: 2px solid #eef;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style each icon block */
+  .social-icons a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9ff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon styles */
+  .social-icons a img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Text styles */
+  .social-icons a p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0 0;
+    color: #333;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    body {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center;    /* Center content vertically */
+      padding: 20px;          /* Ensure there’s padding around the edges */
+    }
+  
+    .social-icons {
+      /* flex-direction: column; Stack icons vertically */
+      gap: 15px;              /* Add spacing between icons */
+      padding: 15px;
+    }
+  
+    .social-icons a {
+      flex: 1 1 100%; /* Each link takes full width */
+      padding: 15px;
+    }
+  
+    .social-icons a img {
+      width: 50px;
+      height: 50px; /* Smaller icons for smaller screens */
+    }
+  
+    .social-icons a p {
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  }
+  
